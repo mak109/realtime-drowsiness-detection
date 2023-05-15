@@ -22,12 +22,12 @@ The three classes were explained to the participants as follows:
 2) Low Vigilant: this state corresponds to subtle cases when some signs of sleepiness appear, or sleepiness is present but no effort to keep alert is required.
 3) Drowsy: This state means that the subject needs to actively try to not fall asleep.
 
-We have extracted images from these videos and notebook for the code is [dataset_preparation.ipynb](dataset_preparation.ipynb).Anyway We have already extracted the images and uploaded in kaggle to be used.
+We have extracted images from these videos and notebook for the code is [dataset_preparation.ipynb](dataset_preparation.ipynb). Anyway We have already extracted the images and uploaded in kaggle to be used.
 To use kaggle datasets kaggle must be installed as follows :
 
  ``` pip install kaggle ```
 
-All datasets api command are already provided in [datasets.txt](datasets.txt) 
+All datasets api command are already provided in [datasets.txt](datasets.txt).
 
 For YOLOv5 model the repo as well as dataset is present in ``` data/train ``` folder consisting of 330 labelled(in yolo format) images of each class(awake,drowsy,low vigilant). These images are subset of the pre-processed larger dataset
 
@@ -37,14 +37,29 @@ The base CNN architecture is used for classification and validation accuracy is 
 
 ``` pip install wandb ```
 There are 2 versions for this task one where dataset is further divided into 5 folds as in original and validate on one random fold and train on remaining 4 folds and another is ususal train and val split on entire dataset .
-The code for the verion 1 is present in [drowsiness-kfold-baseline.ipynb](drowsiness-kfold-baseline.ipynb)
-The code for the version 2 is present in [drowsiness-baseline.ipynb](drowsiness-baseline.ipynb)
+
+The code for the verion 1 is present in [drowsiness-kfold-baseline.ipynb](drowsiness-kfold-baseline.ipynb).
+
+The code for the version 2 is present in [drowsiness-baseline.ipynb](drowsiness-baseline.ipynb).
 
 ## 3. Finetuned Model Set up
 
-This part is very similar to previous one and **wandb** is again used for hyperparameter tuning and tested on several pretrained models like **ResNet50 , InceptionV3, etc**.Same dataset(version 1) is used  for training and validation.
-The code for the above is present in [drowsiness-finetune-v1.ipynb](drowsiness-finetune-v1.ipynb)
+This part is very similar to previous one and **wandb** is again used for hyperparameter tuning and tested on several pretrained models like **ResNet50 , InceptionV3, etc** .Same dataset(version 1) is used  for training and validation.
 
-## 4. YOLOv5 Model Set up
+The code for the above is present in [drowsiness-finetune-v1.ipynb](drowsiness-finetune-v1.ipynb).
+
+## 4. Testing and Visualization 
+
+Since the models are tracked using **wandb**. One of the stored models can be used for testing and visualization. 
+
+The code for the above is present in [drowsiness-baseline-test.ipynb](drowsiness-baseline-test.ipynb).
+
+## 5. YOLOv5 Model Set up
+
+For realtime drowsiness detection in video Yolo provides very efficient implementation for object detection which is used for drowsiness detection
+
+The training and testing is again integrated with **wandb**. 
+
+The code for the above is present in [yolov5-drowsiness-detection.ipynb](yolov5-drowsiness-detection.ipynb).
 
 
