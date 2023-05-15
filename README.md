@@ -62,4 +62,12 @@ The training and testing is again integrated with **wandb**.
 
 The code for the above is present in [yolov5-drowsiness-detection.ipynb](yolov5-drowsiness-detection.ipynb).
 
-
+All the results and comments for our project is present in the Report.pdf
+For viweing the runs in wandb refer [Drowsiness detection](https://wandb.ai/ipda526)
+## References
+1) [Deep Drowsiness Detection using YOLO, Pytorch and Python](https://youtu.be/tFNJGim3FXw)
+2) [Ultralytics, providing very efficient yolo implementation](https://github.com/ultralytics/yolov5)
+3) [Wandb, for hyperparameter tuning](https://wandb.ai)
+4) [https://www.tensorflow.org](https://www.tensorflow.org)
+5) [Jonathan hui's blog on yolo](https://jonathan-hui.medium.com/real-time-object-detection-with-yolo-yolov2-28b1b93e2088#:~:text=YOLO%20uses%20sum%2Dsquared%20error,box%20and%20the%20ground%20truth).
+6) [About Metrics used in yolo ](https://towardsdatascience.com/on-object-detection-metrics-with-worked-example-216f173ed31e)
