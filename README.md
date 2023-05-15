@@ -24,9 +24,12 @@ The three classes were explained to the participants as follows:
 
 We have extracted images from these videos and notebook for the code is [dataset_preparation.ipynb](dataset_preparation.ipynb).Anyway We have already extracted the images and uploaded in kaggle to be used.
 To use kaggle datasets kaggle must be installed as follows :
+
  ``` pip install kaggle ```
 
+All datasets api command are already provided in [datasets.txt](datasets.txt) 
 
+For YOLOv5 model the repo as well as dataset is present in ``` data/train ``` folder consisting of 330 labelled(in yolo format) images of each class(awake,drowsy,low vigilant). These images are subset of the pre-processed larger dataset
 
 ## 2. Baseline Model Set up
 ## 3. Finetuned Model Set up
