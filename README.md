@@ -14,6 +14,20 @@ Project Contributors
 The github repo consists of 6 jupyter notebook files each of which performs a specific subtasks of the overall project.
 
 ## 1. Dataset Collection and Preprocessing
+
+UTA-RLDD(Real Life Drowsiness Dataset)  is used for training and validation and custom dataset for testing, it was created for the task of multi- stage drowsiness detection, targeting not only extreme and easily visible cases, but also subtle cases of drowsiness. It consists of around 30 hours of RGB videos of **60** healthy participants. For each participant we obtained one video for each of three different classes: **awake, drowsy, and low vigilant**, for a total of **180** videos.
+
+The three classes were explained to the participants as follows:
+1) Awake: Subjects were told that being alert meant they were experiencing no signs of sleepiness.
+2) Low Vigilant: this state corresponds to subtle cases when some signs of sleepiness appear, or sleepiness is present but no effort to keep alert is required.
+3) Drowsy: This state means that the subject needs to actively try to not fall asleep.
+
+We have extracted images from these videos and notebook for the code is [dataset_preparation.ipynb](dataset_preparation.ipynb).Anyway We have already extracted the images and uploaded in kaggle to be used.
+To use kaggle datasets kaggle must be installed as follows :
+ ``` pip install kaggle ```
+
+
+
 ## 2. Baseline Model Set up
 ## 3. Finetuned Model Set up
 ## 4. YOLOv5 Model Set up
