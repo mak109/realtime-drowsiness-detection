@@ -62,7 +62,7 @@ The training and testing is again integrated with **wandb**.
 
 The code for the above is present in [yolov5-drowsiness-detection.ipynb](yolov5-drowsiness-detection.ipynb).
 
-All the results and comments for our project is present in the Report.pdf
+All the results and comments for our project is present in the [Project Report.pdf](Project Report.pdf)
 
 For viweing the runs in wandb refer [Drowsiness detection](https://wandb.ai/ipda526)
 
